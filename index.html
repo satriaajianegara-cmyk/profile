@@ -1,22 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport"content="width=device-width, initial-scale=1.0">
-      <title>love confession</title>
-      <link rel="stylesheet" href="style.css">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROFILE</title>
+    <style>
+      body {
+        margin: 0;
+        padding:0;
+      }
+      
+      
+      .container {
+        width: 100%;
+        height:100vh;
+        display: flex;
+        justify-content: center;
+        background: url(kiw.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+      }
+      
+      .card {
+        text-align: center;
+        margin: 15px;
+      }
+      
+      .card > img {
+       border-radius:50%;
+      }
+      
+      .link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top:10px ;
+      }
+      
+      a {
+        margin-right:8px ;
+        color: white;
+        background:linear-gradient(to right top,#9CCFFF,#FDC3A1);
+        text-decoration: none;
+        padding: 8px;
+        border-radius: 8px;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-         <h1>Click the button to see my feelings for you</h1>
-         <button id="revealButton">Reveal</button>
-         <div id="heartcontainer" class="hidden">
-             <div class="heart"></div>
-             <p>I love you!</p>
-         </div>
-     </div>
+      <div class="card">
+        <img src="profile.jpg"width="120px" alt="SATRIA AJI NEGARA" />
+        <h2>SATRIA AJI NEGARA</h2>
+        <p>halo teman teman,perkenalkan nama saya SATRIA AJI NEGARA.Saya adalah seorang siswa yang mencoba untuk membuat website dan ini adalah website pertama saya.</p>
+        <div class="link">
+          <div class="sosmed">
+          <a href="https://www.TIKTOK.com/ongill_128">TIKTOK</a>
+      </div>
+                <div class="sosmed">
+          <a href="https://www.INSTAGRAM.com/satriaa_129">INSTAGRAM</a>
+      </div>
+    </div>
   </body>
-  <script>
-      document.getElementById('RevealButton').addEventListen('click', function() { document.getElementById('heartcontainer').classlist.remove('hidden');});
-  </script>
 </html>
